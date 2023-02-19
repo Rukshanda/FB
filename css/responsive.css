@@ -104,7 +104,7 @@
 
 
     .post{
-      width: 354px !important;
+      width: 90vw !important;
       height: 535px !important;
     }
 
@@ -128,8 +128,16 @@
     font-size: 14px;
    }
 
+   .stories-section-box{
+    width: 150vw;
+   }
 
-
+    .script-content-box{
+      width: 100%;
+    }
+    .script-contnet{
+      width: 90vw;
+    }
    
 }
 
@@ -228,5 +236,21 @@
     }
     .res-head-stories{
       display: none;
+    }
+  }
+
+
+  @media  (max-width: 360px) {
+    .text-btn--box{
+      padding: 0.7rem 2vw !important;
+    }
+    .rec-btn{
+      padding: 9px 7px !important;
+    }
+    .like-btn,.share-btn,.comment-btn{
+      column-gap: 5px !important;
+    }
+    .search-icon{
+      margin-right: 0 !important;
     }
   }
