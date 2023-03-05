@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+:root{
+    --text-white:#E4E6EB;
+    --color-gray: rgb(255 255 255 / 10%);
+    --text-font:'Source Sans Pro', sans-serif;
+    --text-size: 1.15rem;
+    --list-border: 13px;
+    --bg-gray: #242526;
+    --color-blue:hsl(214, 100%, 59%);
+    --text-sm-size: 1rem;
+    --text-lg-size: 1.3rem;
+  
+  }
+
+
+/* ------ some classes */
+
+#white{
+    -webkit-filter: invert(89%) sepia(6%) hue-rotate(185deg);
+
+}
+#active{
+  background-color: var(--color-gray) ;
+}
+
+
+#blue{
+  background-color: rgba(45, 136, 255, 0.2);
+  color: #2d88ff;
+}
+
+#gray{
+  background-color: rgba(255,255,255,.1);
+  color: white;
+}
+
+/* Main section starts here */
+.main-container{
+ position: relative;
+}
+.two-box-whole{
+  height: 690px;
+  width: 500px;
+  overflow-y: hidden;
+ 
+ }
+
+
+
+
+.fri-main{
+    margin-top: 4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.fri-section-1{
+  width: 60px;
+  position: relative;
+
+}
+.fri-section-box{
+  height: 690px;
+  border-right: 2px var(--color-gray) solid;
+  position: fixed;
+}
+.fri-sidebar-list{
+    width: 69px;
+}
+.fri-list-box-1{
+
+}
+.fri-sidebar-item{
+  margin-top: 0.2rem;
+  padding: 6px 10px 5px 17px;
+  border-radius: 10px;
+
+}
+.fri-sidebar-item1{
+    margin-top: 0.2rem;
+    padding: 6px 10px 5px 12px;
+    border-radius: 10px;
+  
+  }
+  .fri-sidebar-item1:hover{
+   background-color: var(--bg-gray);
+  }
+  .fri-sidebar-item:hover{
+    background-color: var(--bg-gray);
+  }
+.fri-icon{
+
+}
+.fri-list-box2{
+
+}
+.fri-icon-bg{
+  background-color: rgba(255,255,255,.1);
+  padding: 0.5rem 1.5rem 0.3rem 0.5rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.fri-list-box3{
+
+}
+.fri-list-box4{
+
+}
+
+ .hr{
+  border-bottom: solid 1px var(--color-gray);
+  width: 28px;
+  margin-left: 0.9rem;
+  margin-top: 0.2rem;
+ }
+
+ /* -------- now list starts from here */
+
+
+ /* ------------ */
+ .fri-section-2{
+ 
+ position: relative;
+ 
+ }
+
+ .fri-section-2cont{
+ position: fixed;
+  height: 695px;
+  width: 370px;
+  background-color: #242526;
+  padding: 1rem;
+ }
+ .fri-section2-box{
+ 
+  margin: 1rem;
+ }
+ .fri-section2-head{
+   padding: 0px 10px 10px 10px;
+ }
+ .fri-sec2-heading{
+  font-size: 2rem;
+  font-family: var(--text-font);
+  color: var(--text-white);
+  font-weight: bold;
+ }
+ .fri-sec2-icon{
+  
+  background-color: var(--color-gray);
+  padding: 10px 10px 8px 10px;
+  border-radius: 50%;
+   
+ }
+
+ .fri-section2-list{
+ 
+
+ }
+ .fri-sec2-listbox{
+ 
+ }
+ .fri-sec-itemicon{
+  background-color: var(--color-gray);
+  padding: 8px 8px 6px 8px;
+  border-radius: 50%;
+ }
+ .fri-sec-itemtext{
+  margin-top: 0.5rem;
+ }
+ .fri-sec2-itembox{
+
+ }
+ .fri-sec2-item{
+  padding: 8px;
+  border-radius: 10px;
+  color: var(--text-white);
+  font-size: var(--text-size);
+  font-weight: 400;
+  font-family: var(--text-font);
+ }
+
+ .fri-sec2-item:hover{
+  background-color: var(--color-gray);
+ }
+ .more-icon{
+  margin-top: 0.5rem;
+ }
+ /* --------------- last section seciotn no 3 */
+ .two-whole{
+
+ 
+ }
+
+ .fri-section-3{
+  color: var(--text-white);
+  font-family: var(--text-font);
+
+ }
+
+ .fri-section3-box{
+  margin-right: 1rem;
+  width: 1093px;
+ margin-top: 2rem;
+ }
+ .fri-sec3-heading{
+  font-size: 1.3rem;
+  font-family: var(--text-font);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+ }
+ .fri-sec3-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+   
+ }
+
+ @media (max-width:1265px) {
+   .fri-sec3-list{
+    grid-template-columns: repeat(3, 1fr);
+   }
+   .fri-section3-box{
+    width: 845px;
+    margin-right: -1rem !important; 
+ 
+   }
+   .fri-sec3-item{
+    width: 240px !important;
+   }
+   .fri-sec3-list{
+    margin-left: 2rem;
+   }
+   .fri-sec3-heading{
+    margin-left: 2rem;
+   }
+ 
+ }
+ 
+ .sec3-img{
+  border-radius: 10px 0px 0px 0px;
+ }
+ .fri-sec3-item{
+  background-color: var(--color-gray);
+  width: 260px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+ }
+ .fri-sec3-itemtext{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 1rem; 
+  padding-bottom: 8px;
+  padding-top: 8px;
+ }
+ .fri-sec3-itembtn{
+  margin-left: 1rem; 
+  margin-right: 1rem;
+   
+ }
+ 
+ .item-btn{
+    margin-top: 0.3rem;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+ }
+
+ 
