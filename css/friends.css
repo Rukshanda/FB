@@ -122,17 +122,14 @@
 
 
  /* ------------ */
- .fri-section-2{
- 
- position: relative;
- 
- }
+.one-whole{
+  background-color: var(--color-gray);
+}
 
  .fri-section-2cont{
- position: fixed;
+ 
   height: 695px;
   width: 370px;
-  background-color: #242526;
   padding: 1rem;
  }
  .fri-section2-box{
@@ -202,7 +199,7 @@
  }
 
  .fri-section3-box{
-  margin-right: 1rem;
+ 
   width: 1093px;
  margin-top: 2rem;
  }
@@ -214,42 +211,29 @@
   margin-left: 1rem;
  }
  .fri-sec3-list{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  padding: 10px;
-   
+  flex-direction: column;
+  align-content: start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+ 
  }
 
- @media (max-width:1265px) {
-   .fri-sec3-list{
-    grid-template-columns: repeat(3, 1fr);
-   }
-   .fri-section3-box{
-    width: 845px;
-    margin-right: -1rem !important; 
- 
-   }
-   .fri-sec3-item{
-    width: 240px !important;
-   }
-   .fri-sec3-list{
-    margin-left: 2rem;
-   }
-   .fri-sec3-heading{
-    margin-left: 2rem;
-   }
- 
- }
+
  
  .sec3-img{
   border-radius: 10px 0px 0px 0px;
+  object-fit: cover;
  }
  .fri-sec3-item{
   background-color: var(--color-gray);
-  width: 260px;
+  max-width: 240px !important;
+  min-width: 200px !important;
+  flex-shrink: 1;
+  flex-grow: 1;
+  margin-left: 1rem;
   border-radius: 10px;
-  padding-bottom: 20px;
+  margin-top: 1rem;
+  padding-bottom: 15px;
  }
  .fri-sec3-itemtext{
   font-size: 1.2rem;
@@ -264,6 +248,7 @@
    
  }
  
+ 
  .item-btn{
     margin-top: 0.3rem;
     padding: 8px;
@@ -272,3 +257,60 @@
  }
 
  
+
+ @media (max-width:1500px) {
+  .fri-section3-box{
+    width: 88vw;
+    margin-right: 0rem !important;
+  }
+   .fri-section-2cont{
+     width: 23vw;
+     margin-left: 1rem;
+   }
+   .fri-section-2{
+    width: 29vw;
+
+   }
+ }
+
+ @media (max-width:1400px) {
+ 
+ }
+
+ @media (max-width:1300px) {
+ 
+ 
+ }
+
+ 
+ @media (max-width:900px) {
+ .fri-section-2{
+  display: none;
+ }
+ .fri-section3-box{
+  width: 92vw;
+  margin-left: 1rem !important;
+}
+}
+
+
+ 
+@media (max-width:520px) {
+  .fri-section-1{
+    display: none;
+  }
+  .fri-section3-box{
+    width: 100vw;
+    margin-left: 0rem !important;
+ 
+    margin-top: 5rem;
+  }
+  .fri-sec3-list{
+    justify-content: center;
+    margin-left: 0rem !important; 
+  }
+  .fri-sec3-item{
+    width: 350px;
+  }
+ 
+ }
