@@ -76,13 +76,13 @@
 }
 .fri-sidebar-item{
   margin-top: 0.2rem;
-  padding: 6px 10px 5px 17px;
+  padding: 6px 10px 5px 20px;
   border-radius: 10px;
 
 }
 .fri-sidebar-item1{
     margin-top: 0.2rem;
-    padding: 6px 10px 5px 12px;
+    padding: 6px 10px 5px 17px;
     border-radius: 10px;
   
   }
@@ -308,6 +308,7 @@
   .fri-sec3-list{
     justify-content: center;
     margin-left: 0rem !important; 
+    margin-right: 2rem !important;
   }
   .fri-sec3-item{
     width: 350px;
